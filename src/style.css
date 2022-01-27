@@ -1,0 +1,244 @@
+* {
+    /* border: 1px solid black; */
+}
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Courier New', monospace;
+    background: url('./background.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content {
+    background-color: white;
+    width: 100vh;
+    height: 100%;
+}
+.frontContent {
+    max-height: 100vh;
+}
+.nav {
+    height: 10vh;
+    width: 100%;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFB133;
+}
+button {
+    color: white;
+    text-shadow: 3px 3px #919191;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 4vh;
+    font-weight: bold;
+}
+.menuOption1::before {
+    content: 'Home';
+}
+.menuOption2::before {
+    content: 'Menu';
+}
+.menuOption3::before {
+    content: 'Contact';
+}
+.topInfo {
+    height: 30%;
+}
+.topInfoHeading {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 5vh;
+    text-align: center;
+}
+.topInfoContent {
+    color: black;
+    text-align: center;
+    padding: 4vh;
+    background: #FFCA85;
+    font-weight: bold;
+    font-size: 3vh;
+}
+.bottomInfo {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chefPhoto {
+    background: url('chef.jpg');
+    background-size: 40vh;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 100%;
+}
+.chefPhotoDesc {
+    font-size: 2vh;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vh;
+    position: absolute;
+    bottom: 0;
+    background: #FFB133;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px #919191;
+    font-size: 3vh;
+}
+
+.menuItems {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+}
+.menuItemBox {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 3vh;
+    padding: 1vh;
+}
+.menuItemAbout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.menuItems .menuItemName,.menuItemPrice {
+    margin: 0;
+    padding: 0;
+}
+.menuImg {
+    height: 15vh;
+    width: 15vh;
+}
+.menuItemName {
+    height: 5vh;
+}
+.menuItemPrice {
+    height: 5vh;
+}
+.menuItem1 .menuImg {
+    background: url(hamburger.jpg);
+    background-size: 15vh;
+    background-repeat: no-repeat;
+}
+.menuItem1 .menuItemName::before {
+    content: 'Hamburger'
+}
+.menuItem1 .menuItemPrice::before {
+    content: '10$'
+}
+
+.menuItem2 .menuImg {
+    background: url(cheeseburger.jpg);
+    background-size: 15vh;
+    background-repeat: no-repeat;
+}
+.menuItem2 .menuItemName::before {
+    content: 'Cheeseburger'
+}
+.menuItem2 .menuItemPrice::before {
+    content: '15$'
+}
+
+.menuItem3 .menuImg {
+    background: url(spicyburger.png);
+    background-size: 15vh;
+    background-repeat: no-repeat;
+}
+.menuItem3 .menuItemName::before {
+    content: 'Spicyburger'
+}
+.menuItem3 .menuItemPrice::before {
+    content: '20$'
+}
+
+.menuItem4 .menuImg {
+    background: url(vegeburger.jpeg);
+    background-size: 15vh;
+    background-repeat: no-repeat;
+}
+.menuItem4 .menuItemName::before {
+    content: 'Vegeburger'
+}
+.menuItem4 .menuItemPrice::before {
+    content: '25$'
+}
+.contactInfo {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+.openingHours {
+    height: 40vh;
+    width: 100%;;
+    border: 0;
+}
+.contactItem {
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.contactItem1::after {
+    content: 'E-mail: aaa@aaa.aaa'
+}
+.contactItem2::before {
+    content: 'Phone nr: +00 000 00'
+}
+.contactItem3::after {
+    content: 'Vancourver St. 22'
+}
+@media only screen and (max-width: 600px) {
+    #content, footer {
+        width: 100%;
+    }
+    .menuItemBox {
+        width: 100%;
+    }
+    .topInfo {
+        height: 40%;
+    }
+    .bottomInfo {
+        height: 60%;
+    }
+    .topInfoContent {
+        font-size: 2.3vh;
+    }
+    .topInfoHeading {
+        height: 10vh;
+    }
+    .chefPhoto {
+        background-size: 33vh;
+        height: 33vh;
+        width: 33vh;
+    }
+  }
