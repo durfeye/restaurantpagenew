@@ -54,9 +54,6 @@ button {
 .menuOption3::before {
     content: 'Contact';
 }
-.topInfo {
-    height: 30%;
-}
 .topInfoHeading {
     height: 6vh;
     display: flex;
@@ -75,7 +72,6 @@ button {
     font-size: 3vh;
 }
 .bottomInfo {
-    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,12 +220,6 @@ footer {
     .menuItemBox {
         width: 100%;
     }
-    .topInfo {
-        height: 40%;
-    }
-    .bottomInfo {
-        height: 60%;
-    }
     .topInfoContent {
         font-size: 2.3vh;
     }
@@ -238,7 +228,7 @@ footer {
     }
     .chefPhoto {
         background-size: 33vh;
-        height: 33vh;
-        width: 33vh;
+        max-height: 33vh;
+        max-width: 33vh;
     }
   }
